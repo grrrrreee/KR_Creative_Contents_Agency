@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="utf-8">
+  <title> Sign_in </title>
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
+  <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  
+
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/modernizr-2.7.1.js"></script>
+  
+</head>
+
+<body>
+
+    
+    <section id="invite" class="pad-lg light-gray-bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-sm-offset-2 text-center">
+            <i class="fa fa-envelope-o margin-40"></i>
+            <h2 class="black">Welcome to New World</h2>
+            <br />
+            <p class="black">Please enter your name, nickname and e-mail.</p>
+            <br />
+            
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                <form name = "join" role="form">
+                  <div id = "login_div" class="form-group">
+                    <input type="NickName" id="Nickname" class="form-control" id="email_field" placeholder="Enter NickName" required>
+                  </div>
+                  <div id = "login_div" class="form-group">
+                    <input type="password" id="private_key" class="form-control" id="password_field" placeholder="Enter Private key" required>
+                  </div>
+                  <!--<input type="button" class= "btn btn-primary btn-lg" value="Get verification mail" onClick="location.href='signup_after.html'">-->
+                  <button class= "btn btn-primary btn-lg" onclick="login()">Log in</button>
+                </form>
+                <div id= "user_div" class="loggedin-div">
+                  <h3>Welcome User</h3>
+                  <p id="user_para">Welcome to Firebase web login Example. You're currently logged in</p>
+                  <button onclick="logout()" >Logout</button>
+                </div>
+          
+              </div>
+            </div><!--End Form row-->
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-sm-8 margin-20">
+            <ul class="list-inline social">
+              <li>Connect with us on</li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+          
+          <div class="col-sm-4 text-right">
+            <p><small>Copyright &copy; 2016. All rights reserved. <br>
+	            Created by <a href="http://designscrazed.org/">Designscrazed</a></small></p>
+          </div>
+        </div>
+        
+      </div>
+    </footer>
+    
+    
+    <!-- Javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="app.js"></script>   
+    <script src="sign_practice.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyDtdb7HwgxZg4EjDDBzzvE5wdsjM52pCNg",
+          authDomain: "myfirstiosproject-cea89.firebaseapp.com",
+          databaseURL: "https://myfirstiosproject-cea89.firebaseio.com",
+          projectId: "myfirstiosproject-cea89",
+          storageBucket: "myfirstiosproject-cea89.appspot.com",
+          messagingSenderId: "14391446409"
+      };
+      firebase.initializeApp(config);
+      </script>
+
+    </body>
+</html>

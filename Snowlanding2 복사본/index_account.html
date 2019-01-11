@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <script src="js/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="tags.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'/>
+  
+
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/main.css"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-form">
+        <h3>Firebase Firestore</h3>
+        <p>Welcome</p>
+        <input type="text" placeholder="Enter Name here" id="text_field">
+        <input type="text" placeholder="Enter Email here" id="email_field">
+        <button id="submit_btn" class= "btn btn-option btn-sm" onclick="storeData()">Submit</button>
+        <button id="submit_btn" class= "btn btn-option btn-sm" onclick="upDateData()">Update</button>
+    </div>  
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDtdb7HwgxZg4EjDDBzzvE5wdsjM52pCNg",
+        authDomain: "myfirstiosproject-cea89.firebaseapp.com",
+        databaseURL: "https://myfirstiosproject-cea89.firebaseio.com",
+        projectId: "myfirstiosproject-cea89",
+        storageBucket: "myfirstiosproject-cea89.appspot.com",
+        messagingSenderId: "14391446409"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="index_tagdb.js"></script>
+    <script src="tags.js"></script>
+</body>
+</html>

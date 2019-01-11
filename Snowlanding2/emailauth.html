@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>회원가입-자바스크립트</title>
+    <script src="email_app.js"></script>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:site_name" content="">
+    <meta property="og:description" content="">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr-2.7.1.js"></script>
+
+</head>
+
+<body>
+<h1 align="center" style="font-size:50px;"><font color="navy"><b>SIGN UP</b></font></h1>
+<form name="join" onsubmit="return validate();" action="http://coding-factory.tistory.com/196" method="post" enctype="text/plain">
+   <table width="600" height="400" border="1" align="center" cellspacing="0">
+       <tr height="10" align="center">
+           <td colspan="2" style="background:navy;" ><font color=white><b>회원기본정보</b></font></td>
+       </tr>
+       <tr>
+           <td><b>아이디:</b></td>
+           <td><input type="text" style="width:170px"id="id" name="id" maxlength="12" /> ※4-12자의 영문 대소문자와 숫자로만 입력</td>
+       </tr>
+       <tr>
+           <td><b>비번:</b></td>
+           <td><input type="password"  style="width:170px"id="pw" maxlength="12"/> ※4-12자의 영문 대소문자와 숫자로만 입력</td>
+       </tr>
+       <tr>
+           <td><b>비번확인:</b></td>
+           <td><input type="password" style="width:170px" id="checkpw" maxlength="12"/></td>
+       </tr>
+       <tr>
+           <td><b>메일주소:</b></td>
+           <td><input type="text" style="width:170px" id="email" /> ex)wjdxo513@naver.com</td>
+       </tr>
+       <tr>
+           <td><b>이름:</b></td>
+           <td><input type="text" style="width:170px" name="name" maxlength="12" /></td>
+       </tr>
+       <tr  height="10" align="center">
+           <td colspan="2" style="background:navy;"><font color=white><b>개인정보</b></font></td>
+       </tr>
+       <tr>
+           <td><b>주민등록번호:</td>
+           <td><input type="text" name="num1" id="num1" size="10" maxlength="6">-</input>
+           	<input type="password" name="num2" id="num2" size="10" maxlength="7"></input>
+           	예) 123456-1234567
+           </td>
+       </tr>
+       <tr>
+           <td><b>생일:</b></td>
+           <td>
+               <input type="text" style="width:80px" id="years" readonly/>년
+               <input type="text" style="width:80px" id="month" readonly/>월
+               <input type="text" style="width:80px" id="day" readonly/>일
+           </td>
+       </tr>
+       <tr>
+           <td><b>관심분야:</b></td>
+           <td><input type="checkbox" name="inter" value="컴퓨터">컴퓨터</input>
+               <input type="checkbox" name="inter" value="인터넷">인터넷</input>
+               <input type="checkbox" name="inter" value="여행">여행</input>
+               <input type="checkbox" name="inter" value="영화감상">영화감상</input>
+               <input type="checkbox" name="inter" value="음악감상">음악감상</input>
+           </td>
+       </tr>
+       <tr>
+           <td>
+               <b>자기소개:</b>
+           </td>
+           <td><textarea name="self" cols="40" rows="7"></textarea></td>
+       </tr>
+   </table>
+   <center>
+       <br/>
+       <input type="submit" value="회원가입" style="border-radius:5px; font-s"/>
+       <input type="reset" value="다시입력" style="border-radius:5px;" />
+   </center>
+</form>
+</body>
+</html>

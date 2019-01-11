@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="">
+	<meta property="og:description" content="">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900|Montserrat:400,700' rel='stylesheet' type='text/css'>
+    
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/modernizr-2.7.1.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <section id="invite" class="pad-lg light-gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 text-center">
+                    <i class="fa fa-envelope-o margin-40"></i>
+                    <h2 class="black">Welcome to New World</h2>
+                    <br />
+                    <p class="black">Please enter your e-mail and Private Key.</p>
+                    <br />
+                    <div id = "login_div" class="main-div">
+                        <h3>Firebase Web login Exmaple</h3>
+                        <form name="join" role="form">
+                            <div id = "login_div" class="form-group">
+                                    <input type="email" placeholder="Email" class="form-control" id="email_field"/ required>
+                            </div>
+                            <div id = "login_div" class="form-group">
+                                    <input type="password" placeholder="Private Key" class="form-control" id="password_field" required>
+                            </div>
+                        </form>
+                        
+                        <button class= "btn btn-primary btn-lg" onclick="login()">Log in</button>
+                    </div>
+
+                    <div id= "user_div" class="loggedin-div">
+                        <h3>Welcome User</h3>
+                        <p id="user_para">Welcome to Firebase web login Example. You're currently logged in</p>
+                        <button class= "btn btn-primary btn-lg" onclick="logout()" >Logout</button>
+                        <button class= "btn btn-primary btn-lg" onclick="location.href='index_main.html'" >test</button>
+                    </div>
+
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDtdb7HwgxZg4EjDDBzzvE5wdsjM52pCNg",
+        authDomain: "myfirstiosproject-cea89.firebaseapp.com",
+        databaseURL: "https://myfirstiosproject-cea89.firebaseio.com",
+        projectId: "myfirstiosproject-cea89",
+        storageBucket: "myfirstiosproject-cea89.appspot.com",
+        messagingSenderId: "14391446409"
+    };
+    firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="app.js"></script>   
+    <script src="sign_practice.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.5/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+          apiKey: "AIzaSyDtdb7HwgxZg4EjDDBzzvE5wdsjM52pCNg",
+          authDomain: "myfirstiosproject-cea89.firebaseapp.com",
+          databaseURL: "https://myfirstiosproject-cea89.firebaseio.com",
+          projectId: "myfirstiosproject-cea89",
+          storageBucket: "myfirstiosproject-cea89.appspot.com",
+          messagingSenderId: "14391446409"
+      };
+      firebase.initializeApp(config);
+      </script>
+    
+</body>
+</html>

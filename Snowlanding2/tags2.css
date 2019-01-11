@@ -1,0 +1,43 @@
+:root{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tags-input {
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-block;
+}
+
+.tags-input .tag{
+    font-size: 100%;
+    padding: 0.5em 0.75em;
+    margin : 0.5em 0.5em;
+    display: inline-block;
+    background-color: rgb(90, 212, 221);
+    color: rgb(255, 255, 255);
+    transition: all 0.15s linear;
+    cursor: pointer;
+}
+
+.tags-input .tag:hover {
+    background-color: #3af;
+    color: white;
+    margin : 0.5em;
+}
+
+.tags-input .tag .close::after {
+    content: '';
+    font-weight: bold;
+    display : inline-block;
+    transform: scale(0.75);
+    margin-left: 0.5em;
+}
+
+.tags-input .tag .close:hover::after {
+    color: red;
+}
+
+.tags-input .main-input {
+    border: 0;
+    outline: 0;
+    padding: 0.5em 5.1em;
+}
